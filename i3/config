@@ -27,7 +27,7 @@ exec --no-startup-id alacrityy
 
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-fill $HOME/Desktop/images/bg/bg1.png
+#exec_always --no-startup-id feh --bg-fill $HOME/Desktop/images/bg/bg1.png
 bindsym $mod+d exec rofi -show drun
 #bindsym $mod+c $exec calc
 
@@ -203,14 +203,16 @@ bindsym $mod+r mode "resize"
 #gaps
 for_window [class=".*"] border pixel 2
 gaps top 50
-gaps left 10
-gaps right 10
+#gaps left 
+#gaps right
 gaps inner 10
 #gaps outer 5
 #smart_gaps on
+smart_borders on
 
 #colors
 client.focused 		#96CDFB	 #96CDFB  #FFFFFF  #ABE9B3  #96CDFB
+client.focused 		#0D47A1  #0D47A1  #FFFFFF  #ABE9B3  #0D47A1
 client.focused_inactive #6E6C7E	 #6E6C7E  #FFFFFF  #ABE9B3  #96CDFB
 client.unfocused	#1E1E2E	 #1E1E2E  #FFFFFF  #1E1E2E  #1E1E2E
 client.urgent		#ABE9B3  #ABE9B3  #FFFFFF  #96CDFB  #B5E8E0
